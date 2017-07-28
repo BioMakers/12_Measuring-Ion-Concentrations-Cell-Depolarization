@@ -1,0 +1,33 @@
+# Detecting alterations in ionic concentrations associated with different cellular states
+##Team:
+Jyotsna Rao and Alan Wright
+Cancer Research UK- Cambridge Institute
+
+Jyotsna Rao will contribute the knowledge of cell culture and alterations in ionic concentrations that lead to altered membrane potential in different cellular states. She will assist in designing and building the prototype and also perform the experiments.
+
+Alan Wright will contribute the knowledge detecting the local changes in ionic concentrations using ion sensing electrodes and its integration with the Arduino kit. He will design and build the prototype and assist in performing the experiments.
+
+##Summary:
+Cells express different ion channels and transporters with specific ion selectivity and permeability on the membrane and the lipid bilayer is impermeable to ions (Fig 1). Thus, there exists a measurable membrane potential across the cell membrane with negative voltage inside the cell compared to outside. A cell that is more negative in comparison to the extracellular space is considered hyperpolarized and when it becomes less negative it is considered depolarized. Interestingly, cancer cells are depolarized when compared to normal cells and events like apoptosis are associated with further depolarization without repolarization. Thus, alteration in membrane potential can serve as a unique bioelectrical signal/marker of cellular events. In this proposal we aim to develop a simple detection system for alterations in membrane potential indirectly by sensing local changes in ionic concentrations. For this purpose, we use ion sensing electrodes which will be connected to the Arduino unit. With this system, ultimately, we hope to develop a low cost, easy and fast way of detecting alterations in cellular states in response to drugs blocking ion channels or inducing apoptosis.
+
+##Proposal:
+Apoptosis is a mechanism by which there is programmed activation of cell death. Changes in intracellular ionic homeostasis has been associated with apoptosis. Depolarization of the plasma membrane is observed in the early stages of apoptosis in response to receptor-mediated, stress-induced and drug-induced apoptosis. However, it is not clear whether it is an epiphenomenon or has a regulatory role in apoptosis. Membrane depolarization can occur as a result of net electrogenic inflow of Na+ or Ca2+ and/or outflow of intracellular anions like Cl- or organic anions. Cation inflow using several ion transport pathways have been implicated in membrane depolarization. These include plasma membrane ATPases (eg: Na+ /K+ ATPase) and ion channels (eg: voltage gated ion channels, non-selective cation channels) [1]. In this proposal, we hope to develop a cost-effective, easy and quick way of detecting membrane depolarization induced by different stressors.
+
+In this proposal, we plan to use Jurkat T cells, a cancer cell line, as a model system. In these cells, we would like to detect alterations in membrane potential (depolarization) observed in response to Ouabain a Na+/K+ uptake inhibitor, anti-Fas antibody [2] and doxorubicin, a cytotoxic chemotherapeutic agent [3] (induces apoptosis using Fas-independent pathways) using ion selective electrodes. 
+
+Ion selective electrodes with BNC connectors capable of detecting Na+, K+ and Cl- will be purchased (Cole-Palmer). We plan to set up a well/cup with Jurkat T cells as in the diagram. The voltages will be calibrated to ion concentrations with known solutions of each ion salt. Each pH meter has a BNC connector on the end. The Arduino unit would be used to implement a volt-meter across each of these BNC connectors: this can be done sequentially with a switch to select inputs. The results can then be displayed on a display unit supplied with the kit or a PC and logged manually over time after transporter inhibition or the induction of apoptosis (Fig 2). 
+
+To begin with, cells are grown in normal RPMI 1640 media containing glutamine. RPMI has normal Na+ and K+ concentrations of 102.7 mM and 5.4 mM, respectively totalling to 108.1 mM. We will monitor the alterations in voltages with changes in concentrations of Na+ and K+ ions in solutions of Jurkat T-cells while following Cl- ion concentration as a control.  The cells grown in normal RPMI media will be exposed to increasing concentrations of ouabain (10, 50 and 100 µm) or 10 ng/ml anti-Fas antibody or Doxorubicin (1, 10 and 100 µm). These experiments will have three technical replicates initially. Further investigations will be performed with varying salt concentrations to test specific ion channel activities.
+ 
+Currently, detection of membrane potential differences associated with alterations in cellular states is currently achieved by direct measurements which include relatively complicated techniques like patch-clamp or indirect measurements with fluorescent dyes (DiBAC4(3)) and sorting the cells on a fluorescence activated cell sorter (FACS). With our system, ultimately, we hope to develop a scalable, low cost, easy and fast way of detecting alterations in membrane potential in response to drugs (eg: inducing apoptosis) which does not involve expensive detection systems and can efficiently screen a large number of cell lines and conditions.
+
+##Budget
+Ion sensitive electrodes (Na+, K+ and Cl-) £250 each (Cole-Palmer). 
+https://www.coleparmer.co.uk/i/cole-parmer-ise-electrode-sodium-double-junction-bnc/2750243?PubID=UY&persist=true&ip=no&keyword=&gclid=CMDEusKOzNQCFe-87Qodm7oFfQ
+Arduino starter kit 
+Reagents for cell culture BNC connectors and any other necessary electronic components will be sourced from the lab.
+
+##References
+1.	Franco, R., C.D. Bortner, and J.A. Cidlowski, Potential roles of electrogenic ion transport and plasma membrane depolarization in apoptosis. J Membr Biol, 2006. 209(1): p. 43-58.
+2.	Bortner, C.D., M. Gomez-Angelats, and J.A. Cidlowski, Plasma membrane depolarization without repolarization is an early molecular event in anti-Fas-induced apoptosis. J Biol Chem, 2001. 276(6): p. 4304-14.
+3.	Gamen, S., et al., Doxorubicin-induced apoptosis in human T-cell leukemia is mediated by caspase-3 activation in a Fas-independent way. FEBS Lett, 1997. 417(3): p. 360-4.
