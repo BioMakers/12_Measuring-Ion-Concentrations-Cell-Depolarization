@@ -1,1 +1,19 @@
+#Technical_Description
+This is a technical description of how the ion sensitive electordes are set up for the depolarization experiment. The example given is only
+for sodium and chloride measurements. The experiment gives a real time measurement of these ions in parts per million. The arduino sketch should
+be modified based on calibration measurements with standard solutions. This should be performed for each batch of experiments
 
+Pictures of the measurement set up can be found in
+setup_picture1.jpg
+setup_picture2.jpg
+This shows how the setup would look for a calibration sample of 100ml of buffered salt solution
+These show the setup for measuring Sodium and Chloride at the same time. The chloride channel has a single electrode, the sodium channel has
+the detection electrode and a reference electrode combined into a single potential difference.
+The two bread boards are for each "channel" one for sodium, one for chloride. The circuit diagram for these op-amp non-inverting circuits are
+given in the file "cdi.pdf"
+The setup uses an Arduino Uno. The sketch file for this is also given for this example setup: "Cl_Na_electrode.ino". The calibration parameters
+are set at the top of the sketch.
+
+In this example set up, the Chloride voltage is read at the A0 analogue channel of the Arduino and the sodium at the A1 channel. 
+The final experiment requires the addition of a potassium ion-sensitive electrode which could be similarly amplified to the Cl- electrode
+and attached to the A2 channel. The script would then need updating to include these values as well.
