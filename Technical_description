@@ -1,3 +1,5 @@
+
+
 #Technical_Description
 This is a technical description of how the ion sensitive electordes are set up for the depolarization experiment. The example given is only
 for sodium and chloride measurements. The experiment gives a real time measurement of these ions in parts per million. The arduino sketch should
@@ -17,3 +19,6 @@ are set at the top of the sketch.
 In this example set up, the Chloride voltage is read at the A0 analogue channel of the Arduino and the sodium at the A1 channel. 
 The final experiment requires the addition of a potassium ion-sensitive electrode which could be similarly amplified to the Cl- electrode
 and attached to the A2 channel. The script would then need updating to include these values as well.
+
+
+All material is available open source under Apache: https://www.apache.org/licenses/LICENSE-2.0
